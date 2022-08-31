@@ -1,0 +1,16 @@
+{
+    "description": "Projeto site",
+    "authors": [
+        {
+            "name": "avinho",
+            "email": "alvaromarttinho@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Core\\": "core"
+        }
+    },
+    "require": {}
+
+}
