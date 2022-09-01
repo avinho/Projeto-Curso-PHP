@@ -23,7 +23,7 @@ class ConfigController
             if(isset($this->urlArray[0])) {
                 $this->urlController = $this->slugController($this->urlArray[0]);
             } else {
-                $this->urlController = "Home";
+                $this->urlController = $this->slugController("Home");
             }
 
         } else {
@@ -61,6 +61,8 @@ class ConfigController
 
     public function loadPage()
     {
-        
+        $classLoad = "\\Sts\\Controllers\\" . $this->urlController;
+        $classPage = new $classLoad();
+        $classPage->index();
     }
 }
