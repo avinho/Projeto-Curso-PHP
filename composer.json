@@ -1,9 +1,9 @@
 {
-    "description": "Projeto site",
+    "description": "Projeto Celke",
     "authors": [
         {
-            "name": "avinho",
-            "email": "alvaromarttinho@gmail.com"
+            "name": "Cesar Szpak",
+            "email": "cesar@celke.com.br"
         }
     ],
     "autoload": {
@@ -14,5 +14,4 @@
         }
     },
     "require": {}
-
 }

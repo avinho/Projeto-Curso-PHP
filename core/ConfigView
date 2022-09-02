@@ -1,0 +1,29 @@
+<?php
+
+namespace Core;
+
+/**
+ * Carrega as páginas da View
+ * 
+ * @author avinho <alvaromarttinho@gmail.com>
+ */
+class ConfigView
+{
+    /**
+     * Recebe o endereço da VIEW e os DADOS.
+     * @param string $nameView Endereço da VIEW que deve ser carregada.
+     * @param array $data Dados que a VIEW deve receber.
+     */
+    public function __construct(private string $nameView, private array $data)
+    {
+    }
+
+    public function loadView()
+    {
+        if(file_exists('app/' . $this->nameView . '.' . 'php')) {
+            include 'app/' . $this->nameView . '.' . 'php';
+        } else {
+            die("Erro: Por favor, tente novamente. Caso o erro persista, entre em contato com o adm.". EMAILADM);
+        }
+    }
+}
