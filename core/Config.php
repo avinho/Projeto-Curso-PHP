@@ -37,6 +37,6 @@ abstract class Config
 
         //Credenciais do banco de dados
 
-        define('EMAILADM', 'cesar@celke.com.br');
+        define('EMAILADM', 'alvaromarttinho@gmail.com');
     }
 }
